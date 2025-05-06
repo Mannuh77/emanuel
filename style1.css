@@ -333,7 +333,7 @@ section a:hover {
 @media (max-width: 768px) {
   header {
     flex-direction: column;
-    margin-left: -88%;    
+    margin-left: -80%;    
     align-items: center;
     text-align: center;
     padding: 5px;
