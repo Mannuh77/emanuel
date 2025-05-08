@@ -232,9 +232,9 @@ section a:hover {
 }
 
 .about-image img {
-  max-width: 150%;
+  max-width: 100%;
   height: auto;
-  max-height: 500px; /* reduced image height */
+  max-height: 300px; /* reduced image height */
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
