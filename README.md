@@ -1,0 +1,1 @@
+Emanuel is my personal website that introduces who I am and what I do. It highlights my professional background across multiple fields, including ICT, software development, and training—offering a clear snapshot of my skills, experience, and interests
