@@ -59,12 +59,13 @@
       <a href="https://www.facebook.com/Emanuel Kimindu" target="_blank"><i class="fab fa-facebook"></i></a>      
     </div>
 
-     <div>
-        <button id="chatbot-toggle" onclick="openChat()">
-               Chat with Me
-        </button>            
-     </div>
-             
+       <div>
+        <button id="chatbot-toggle" onclick="toggleChat()">
+          💬 Chat with Me
+        </button>
+      </div>
+
+                  
     <div id="weather-container"> 
         <div>
               <p id="date">Loading date...</p>
@@ -81,13 +82,13 @@
   <div class="about-text">
     <h2>About Me</h2>
       <ul style="font-size: xx-large;">
-        <li><i class="fas fa-user-cog"></i> A versatile and results-driven <strong>Computer Scientist</strong> with expertise in network administration, Windows Server management, software development, IT support, and data analysis.</li>
-        <li><i class="fas fa-network-wired"></i> Skilled in designing, configuring, and optimizing <strong>LAN/WAN networks</strong>, managing Windows Server environments, and ensuring seamless connectivity, security, and performance across IT infrastructures.</li>
-        <li><i class="fas fa-code"></i> Adept at developing robust and scalable <strong>web applications</strong>, translating business requirements into user-friendly solutions.</li>
-        <li><i class="fas fa-shield-alt"></i> Implements <strong>cybersecurity best practices</strong> and maintains IT infrastructure resilience.</li>
-        <li><i class="fas fa-cloud"></i> Proficient in <strong>Microsoft 365 administration</strong> and IT security tools.</li>
-        <li><i class="fas fa-lightbulb"></i> Passionate about leveraging technology to enhance <strong>business efficiency and innovation</strong>.</li>
-        <li><i class="fas fa-users-cog"></i> A natural problem solver and <strong>collaborative team player</strong>, dedicated to optimizing IT operations, strengthening network systems, and delivering reliable technical support in dynamic environments.</li>
+        <li><i class="fas fa-user-cog" style="margin-right:10px; color:#1e3a8a;"></i> A versatile and results-driven <strong>Computer Scientist</strong> with expertise in network administration, Windows Server management, software development, IT support, and data analysis.</li>
+        <li><i class="fas fa-network-wired" style="margin-right:10px; color:#0f766e;"></i> Skilled in designing, configuring, and optimizing <strong>LAN/WAN networks</strong>, managing Windows Server environments, and ensuring seamless connectivity, security, and performance across IT infrastructures.</li>
+        <li><i class="fas fa-code" style="margin-right:10px; color:#2563eb;"></i> Adept at developing robust and scalable <strong>web applications</strong>, translating business requirements into user-friendly solutions.</li>
+        <li><i class="fas fa-shield-alt" style="margin-right:10px; color:#dc2626;"></i> Implements <strong>cybersecurity best practices</strong> and maintains IT infrastructure resilience.</li>
+        <li><i class="fas fa-cloud" style="margin-right:10px; color:#7c3aed;"></i> Proficient in <strong>Microsoft 365 administration</strong> and IT security tools.</li>
+        <li><i class="fas fa-lightbulb" style="margin-right:10px; color:#eab308;"></i> Passionate about leveraging technology to enhance <strong>business efficiency and innovation</strong>.</li>
+        <li><i class="fas fa-users-cog" style="margin-right:10px; color:#16a34a;"></i> A natural problem solver and <strong>collaborative team player</strong>, dedicated to optimizing IT operations, strengthening network systems, and delivering reliable technical support in dynamic environments.</li>
       </ul>
 
   </div>
@@ -123,16 +124,33 @@
             <h3>ICT Field Service Specialist – MAREZI</h3>
             <p class="company">Riana Group · Full-time</p>
             <p class="location">Kenya · July 2025 – Present</p>
-            <ul>
-              <li><strong>🎯 Queue Management Systems (QMS):</strong> Install, configure, and support QMS solutions to streamline client flow and enhance service efficiency across sectors including healthcare, automobiles, telecommunications, and finance.</li>
-              <li><strong>📺 Digital Signages Systems:</strong> Deploy and manage digital display systems for real-time content broadcasting, boosting custmers engagement to various clients and communication effectiveness.</li>
-              <li><strong>📊 Customer Feedback Systems:</strong> Implement and maintain interactive feedback platforms that provide actionable insights through real-time data analysis and reporting.</li>
-              <li><strong>📅 Appointment Management Systems:</strong> Support and optimize digital scheduling systems that reduce wait times and improve overall service delivery.</li>
-              <li><strong>User Training & Handover:</strong> Train end-users on system usage, oversee onboarding, and ensure smooth transitions with proper documentation and sign-offs.</li>
-              <li><strong>Technical Maintenance & Support:</strong> Perform system diagnostics, attend to client support needs on-site and remotely, and ensure continuous system functionality.</li>
-              <li><strong>Daily Reporting & Team Coordination:</strong> Submit job sheets, provide daily work updates, and collaborate with engineers and project managers to meet client expectations and deadlines.</li>
-              <li><strong>Innovation & R&D Contribution:</strong> Participate in research and development efforts to refine solutions and align services with Riana Group’s mission: “Global Tech Solutions for Local Challenges.”</li>
-            </ul>
+           <ul>
+          <li>
+            <i class="fa-solid fa-users-gear" style="margin-right:8px; color:#1e3a8a;"></i><strong>Queue Management Systems (QMS):</strong>
+            Install, configure, and support QMS solutions to streamline client flow and enhance service efficiency across sectors including healthcare, automobiles, telecommunications, and finance.
+          </li>
+          <li><i class="fa-solid fa-display" style="margin-right:8px; color:#6d28d9;"></i> <strong>Digital Signage Systems:</strong>
+            Deploy and manage digital display systems for real-time content broadcasting, boosting customer engagement across various clients and communication effectiveness.
+          </li>
+          <li><i class="fa-solid fa-comments" style="margin-right:8px; color:#16a34a;"></i> <strong>Customer Feedback Systems:</strong>
+            Implement and maintain interactive feedback platforms that provide actionable insights through real-time data analysis and reporting.
+          </li>
+          <li><i class="fa-solid fa-calendar-days" style="margin-right:8px; color:#f59e0b;"></i><strong>Appointment Management Systems:</strong>
+            Support and optimize digital scheduling systems that reduce wait times and improve overall service delivery.
+          </li>
+          <li><i class="fa-solid fa-chalkboard-user" style="margin-right:8px; color:#16a34a;"></i><strong>User Training & Handover:</strong>
+            Train end-users on system usage, oversee onboarding, and ensure smooth transitions with proper documentation and sign-offs.
+          </li>
+          <li><i class="fa-solid fa-gears" style="margin-right:8px; color:#1e3a8a;"></i><strong>Technical Maintenance & Support:</strong>
+            Perform system diagnostics, attend to client support needs on-site and remotely, and ensure continuous system functionality.
+          </li>
+          <li><i class="fa-solid fa-clipboard-check" style="margin-right:8px; color:#1e3a8a;"></i><strong>Daily Reporting & Team Coordination:</strong>
+            Submit job sheets, provide daily work updates, and collaborate with engineers and project managers to meet client expectations and deadlines.
+          </li>
+          <li><i class="fa-solid fa-lightbulb" style="margin-right:8px; color:#eab308;"></i><strong>Innovation & R&D Contribution:</strong>
+            Participate in research and development efforts to refine solutions and align services with Riana Group’s mission: “Global Tech Solutions for Local Challenges.”
+          </li>
+        </ul>
         </div>
       </div>
 
@@ -175,7 +193,7 @@
         <div class="timeline-content">
           <h3>Assistant Centre Manager - Ajira V. Champion</h3>
             <p class="company">Ajira Youth Empowerment Centre (AYEC), Kibwezi West · Volunteer</p>
-            <p class="location">Kibwezi, Kenya · June 2024 – October 2024</p>
+            <p class="location">Kibwezi West, Kenya · June 2024 – October 2024</p>
             <ul>
               <li><strong>ICT Training:</strong> Delivered ICT training to over 300 youth on Web Development, Data Analysis, Graphics Design, and Programming.</li>
               <li><strong>Centre Operations:</strong> Managed centre operations and mentored attachés for professional growth.</li>
@@ -191,7 +209,7 @@
         <div class="timeline-content">
           <h3>ICT Officer</h3>
             <p class="company">NG-CDF Kibwezi West Headquarters · Attachment</p>
-            <p class="location">Kibwezi, Kenya · May 2023 – July 2023</p>
+            <p class="location">Kibwezi West, Kenya · May 2023 – July 2023</p>
               <ul>
                 <li><strong>System & Network Maintenance:</strong> Configured and maintained computer hardware, network devices, and software applications.</li>
                 <li><strong>Data Management:</strong> Managed and analyzed large datasets for bursary allocations and tenders, ensuring data accuracy.</li>
@@ -199,9 +217,7 @@
                 <li><strong>LAN Installation:</strong> Installed and managed LAN infrastructure, significantly improving network efficiency.</li>
               </ul>
         </div>
-      </div>
-
-      
+      </div>     
 
       <div class="timeline-item right">
         <div class="timeline-content">
@@ -417,8 +433,7 @@
     <p>&copy; 2025 Emanuel Kimindu. All rights reserved.</p>
   </footer>
 
-  
-    <script>
+  <script>
       function toggleInfo(el) {
         el.classList.toggle('active');
       }
