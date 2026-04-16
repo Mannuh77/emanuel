@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Emanuel Kimindu - Portfolio, Software Development & Networking</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="style1.css" />
   <script src="script.js" defer></script>
@@ -12,6 +13,8 @@
 
 
 </head>
+  <!------chatbot-->
+  
 <body>
  <div>
    <header>
@@ -55,9 +58,19 @@
       <a href="mailto:peterkimindu2@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
       <a href="https://www.facebook.com/Emanuel Kimindu" target="_blank"><i class="fab fa-facebook"></i></a>      
     </div>
-    <div id="weather-container">
-      <p id="date">Loading date...</p>
-      <p id="weather">Loading weather...</p>
+
+     <div>
+        <button id="chatbot-toggle" onclick="openChat()">
+               Chat with Me
+        </button>            
+     </div>
+             
+    <div id="weather-container"> 
+        <div>
+              <p id="date">Loading date...</p>
+              <p id="weather">Loading weather...</p>
+         </div>         
+       
     </div>
 
   </section>  
@@ -85,16 +98,17 @@
  <section id="key-skills">
   <div class="skills-text">
     <h2>Key Skills and Competencies</h2>
-    <ul>
-      <li><strong>Network Engineering:</strong> Cisco-certified in LAN/WAN management, VPNs, DNS, DHCP, and network infrastructure design, device configuration, and performance optimization.</li>
-      <li><strong>Web Development:</strong> Proficient in full-stack technologies (HTML, CSS, JavaScript, Python, PHP, React, Git, REST APIs) with experience in scalable web and desktop applications.</li>
-      <li><strong>Windows Server Administration:</strong> Skilled in Windows Server 2022, Active Directory, Domain Services, Group Policies, and enterprise IT management.</li>
-      <li><strong>Database Management:</strong> Experienced in MySQL, Advanced Excel, Kobo Collect, and data visualization.</li>
-      <li><strong>Microsoft 365 Administration & ICT Support:</strong> Proficient in Office 365 tools, system troubleshooting (CompTIA A+), and Windows/UNIX environments Fundamentals.</li>
-      <li><strong>Graphics Design:</strong> Skilled in Photoshop, Illustrator, Canva, and branding materials.</li>
-      <li><strong>Training & Empowerment:</strong> Experienced in ICT training and Ajira digital skills programs.</li>
-      <li><strong>Soft Skills:</strong> Strong communication, problem-solving, leadership, and adaptability.</li>
-    </ul>
+  <ul>
+    <li><strong>Network Engineering:</strong> Cisco-certified with expertise in LAN/WAN management, VPNs, DNS, DHCP, network infrastructure design, device configuration, and performance optimization.</li>
+    <li><strong>Web Development:</strong> Proficient in full-stack technologies including HTML, CSS, JavaScript, Python, PHP, React, Git, and REST APIs, with experience developing scalable web and desktop applications.</li>
+    <li><strong>Windows Server Administration:</strong> Skilled in Windows Server 2022, Active Directory, Domain Services, Group Policy management, and enterprise IT environments.</li>
+    <li><strong>Database Management:</strong> Experienced in MySQL, Advanced Excel, Kobo Collect, and data analysis and visualization.</li>
+    <li><strong>Microsoft 365 Administration & ICT Support:</strong> Proficient in Microsoft 365 tools, system troubleshooting (CompTIA A+), and Windows/UNIX environments.</li>
+    <li><strong>Graphic Design:</strong> Skilled in Adobe Photoshop, Illustrator, Canva, and creation of professional branding materials.</li>
+    <li><strong>Training & Empowerment:</strong> Experienced in delivering ICT training and Ajira Digital skills programs to diverse audiences.</li>
+    <li><strong>Customer Experience Systems:</strong> Experienced in deploying and supporting QMS, Digital Signage, Customer Feedback, and Appointment Management systems.</li>
+    <li><strong>Soft Skills:</strong> Strong communication, problem-solving, leadership, teamwork, and adaptability in dynamic environments.</li>
+</ul>
   </div>
 </section>
 
@@ -106,19 +120,19 @@
           <div class="timeline">
             <div class="timeline-item left">
           <div class="timeline-content">
-            <h3>ICT Field Service Specialist – Q-SYS</h3>
+            <h3>ICT Field Service Specialist – MAREZI</h3>
             <p class="company">Riana Group · Full-time</p>
             <p class="location">Kenya · July 2025 – Present</p>
             <ul>
-            <li><strong>🎯 Queue Management Systems (QMS):</strong> Install, configure, and support QMS solutions to streamline client flow and enhance service efficiency across sectors including healthcare, automobiles, telecommunications, and finance.</li>
-            <li><strong>📺 Digital Signages:</strong> Deploy and manage digital display systems for real-time content broadcasting, boosting custmers engagement to various clients and communication effectiveness.</li>
-            <li><strong>📊 Customer Feedback Systems:</strong> Implement and maintain interactive feedback platforms that provide actionable insights through real-time data analysis and reporting.</li>
-            <li><strong>📅 Appointment Management Platforms:</strong> Support and optimize digital scheduling systems that reduce wait times and improve overall service delivery.</li>
-            <li><strong>User Training & Handover:</strong> Train end-users on system usage, oversee onboarding, and ensure smooth transitions with proper documentation and sign-offs.</li>
-            <li><strong>Technical Maintenance & Support:</strong> Perform system diagnostics, attend to client support needs on-site and remotely, and ensure continuous system functionality.</li>
-            <li><strong>Daily Reporting & Team Coordination:</strong> Submit job sheets, provide daily work updates, and collaborate with engineers and project managers to meet client expectations and deadlines.</li>
-            <li><strong>Innovation & R&D Contribution:</strong> Participate in research and development efforts to refine solutions and align services with Riana Group’s mission: “Global Tech Solutions for Local Challenges.”</li>
-          </ul>
+              <li><strong>🎯 Queue Management Systems (QMS):</strong> Install, configure, and support QMS solutions to streamline client flow and enhance service efficiency across sectors including healthcare, automobiles, telecommunications, and finance.</li>
+              <li><strong>📺 Digital Signages Systems:</strong> Deploy and manage digital display systems for real-time content broadcasting, boosting custmers engagement to various clients and communication effectiveness.</li>
+              <li><strong>📊 Customer Feedback Systems:</strong> Implement and maintain interactive feedback platforms that provide actionable insights through real-time data analysis and reporting.</li>
+              <li><strong>📅 Appointment Management Systems:</strong> Support and optimize digital scheduling systems that reduce wait times and improve overall service delivery.</li>
+              <li><strong>User Training & Handover:</strong> Train end-users on system usage, oversee onboarding, and ensure smooth transitions with proper documentation and sign-offs.</li>
+              <li><strong>Technical Maintenance & Support:</strong> Perform system diagnostics, attend to client support needs on-site and remotely, and ensure continuous system functionality.</li>
+              <li><strong>Daily Reporting & Team Coordination:</strong> Submit job sheets, provide daily work updates, and collaborate with engineers and project managers to meet client expectations and deadlines.</li>
+              <li><strong>Innovation & R&D Contribution:</strong> Participate in research and development efforts to refine solutions and align services with Riana Group’s mission: “Global Tech Solutions for Local Challenges.”</li>
+            </ul>
         </div>
       </div>
 
@@ -189,7 +203,7 @@
 
       
 
-      <div class="timeline-item left">
+      <div class="timeline-item right">
         <div class="timeline-content">
           <h3>Administrative Clerk</h3>
           <p class="company">Independent Electoral and Boundaries Commission (IEBC) · Contract</p>
