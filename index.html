@@ -10,11 +10,12 @@
   <link rel="stylesheet" href="style1.css" />
   <script src="script.js" defer></script>
   <script src="weather.js" defer></script>
+  <script src="chatbot.js" defer></script>
 
 
 </head>
   <!------chatbot-->
-  
+        
 <body>
  <div>
    <header>
@@ -40,9 +41,9 @@
 
   <!-- Home Section -->
   <section id="home">
-    <h3 style="font-size: x-large;">Hello There 👋 <span style="font-size:inherit; font-weight:700;">I'm</span></h3>
+    <h3 style="font-size: x-large;">Hello There 👋 I'm<span style="font-size:inherit; font-weight:700;"></span></h3>
 
-    <h1 style="font-size: xxx-large; color: lightskyblue;">Emanuel Kimindu</h1>
+    <h1 style="font-size: xxx-large; color: lightskyblue;">Emanuel Kimindu <br> Still I'm;</h1> 
     <p style="font-size: large; color: whitesmoke; margin:0;">ICT Specialist | Network & Systems Administrator | Full Stack Developer | Trainer | Cisco Certified</p>
     <!-- Added Let's Converse Button as a link -->
     <a href="#contact" class="converse-btn">Let's Converse</a>
@@ -58,14 +59,7 @@
       <a href="mailto:peterkimindu2@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
       <a href="https://www.facebook.com/Emanuel Kimindu" target="_blank"><i class="fab fa-facebook"></i></a>      
     </div>
-
-       <div>
-        <button id="chatbot-toggle" onclick="toggleChat()">
-          💬 Chat with Me
-        </button>
-      </div>
-
-                  
+                        
     <div id="weather-container"> 
         <div>
               <p id="date">Loading date...</p>
@@ -73,7 +67,32 @@
          </div>         
        
     </div>
+     
+    
+    <!-- CHAT BUTTON -->
+       <!-- CHAT BUTTON -->
+<div class="chatbot-button" onclick="openChat()">
+    💬 About Emanuel
+</div>
 
+<!-- CHAT BOX -->
+      <div class="chatbot-container" id="chatBox">
+          <div class="chat-header">
+              💬 About Emanuel
+              <span class="close-btn" onclick="closeChat()">✖</span>
+          </div>
+
+          <div class="chat-body" id="chatBody">
+              <p class="bot-message">
+                  Hi 👋 Ask me about Emanuel.
+              </p>
+          </div>
+
+          <div class="chat-input-area">
+              <input type="text" id="userInput" placeholder="Type your question..." />
+              <button id="sendBtn" onclick="sendMessage()">Send</button>
+          </div>
+      </div>
   </section>  
   
   <!-- About Me Section -->
@@ -458,5 +477,15 @@
       });
     });
   </script>
+
+   <script>
+function openChat(){
+    document.getElementById("chatBox").classList.add("active");
+}
+
+function closeChat(){
+    document.getElementById("chatBox").classList.remove("active");
+}
+</script>     
 </body>
 </html>

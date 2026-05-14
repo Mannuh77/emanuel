@@ -535,4 +535,140 @@ h2 {
     }
 }
 
+ #chat-container{
+  position: fixed;
+  bottom: 280px;
+  right: 20px;
+  width: 10%;
+  min-width: 300px;
+  height: 450px;
+  background: white;
+  border-radius: 12px;
+  display: none;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  z-index: 99999;
+}
 
+.chatbot-button{
+    position: fixed;
+    bottom: 30px;
+    left: 20px;
+    background: lightskyblue;
+    color: black;
+    padding: 12px 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    z-index: 9999;
+}
+
+/* HIDDEN BY DEFAULT */
+.chatbot-container{
+    position: fixed;
+    bottom: 80px;
+    left: 20px;
+    width: 320px;
+    background: white;
+    border-radius: 15px;
+
+    opacity: 0;
+    transform: translateY(20px);
+    pointer-events: none;
+
+    transition: 0.25s ease;
+    z-index: 9999;
+}
+
+/* SHOW STATE */
+.chatbot-container.active{
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.chat-header{
+    background: lightskyblue;
+    color: black;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.close-btn{
+    cursor: pointer;
+}
+
+.chat-body{
+    padding: 12px;    
+    color: white;
+}
+.bot-message{
+    color: black;
+}
+.chat-input-area{
+    display: flex;
+    border-top: 1px solid #333;
+}
+
+.chat-input-area input{
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: #111;
+    color: white;
+}
+
+.chat-input-area button{
+    background: lightskyblue;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+
+    .chatbot-button{
+        bottom: 15px;
+        left: 15px;
+        padding: 10px 14px;
+        font-size: 14px;
+    }
+
+    .chatbot-container{
+        width: 92%;
+        left: 4%;
+        right: 4%;
+        bottom: 80px;
+        border-radius: 12px;
+    }
+
+    .chat-body{
+        height: 250px;
+        font-size: 14px;
+    }
+
+    .chat-input-area input{
+        font-size: 14px;
+    }
+
+    .chat-input-area button{
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 480px) {
+
+    .chatbot-container{
+        width: 95%;
+        left: 2.5%;
+        bottom: 70px;
+    }
+
+    .chat-body{
+        height: 220px;
+    }
+}
