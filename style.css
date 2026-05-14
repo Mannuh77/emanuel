@@ -632,16 +632,16 @@ h2 {
 @media screen and (max-width: 768px) {
 
     .chatbot-button{
-        bottom: 15px;
-        left: 15px;
+        bottom: 20%;
+        right: 10px;
+        width: 100px;
         padding: 10px 14px;
         font-size: 14px;
     }
 
     .chatbot-container{
-        width: 92%;
-        left: 4%;
-        right: 4%;
+        width: auto;
+        right: 4%;        
         bottom: 80px;
         border-radius: 12px;
     }
@@ -663,8 +663,8 @@ h2 {
 @media screen and (max-width: 480px) {
 
     .chatbot-container{
-        width: 95%;
-        left: 2.5%;
+        width: 60%;
+        right: 2.5%;
         bottom: 70px;
     }
 
