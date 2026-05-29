@@ -1,3 +1,6 @@
+// ✅ Add this line BEFORE the event listener — replace with your actual public key
+emailjs.init("mNdQjLP5y8O6tVULJ");
+
 document.getElementById("contact-form").addEventListener("submit", function(e) {
     e.preventDefault();
 
@@ -15,3 +18,4 @@ document.getElementById("contact-form").addEventListener("submit", function(e) {
         alert("Failed to send message.");
     });
 });
+
