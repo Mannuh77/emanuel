@@ -169,7 +169,11 @@ h2 {
 
 
 .timeline-content {
-  background-color: #f9f9f9;
+  background-color: #ffffff;
+  background-image:
+    linear-gradient(#dcdcdc 1px, transparent 1px),
+    linear-gradient(90deg, #dcdcdc 1px, transparent 1px);
+  background-size: 20px 20px;
   border-radius: 6px;
   padding: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
