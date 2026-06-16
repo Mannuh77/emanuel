@@ -333,7 +333,7 @@ section a:hover {
 @media (max-width: 768px) {
   header {
     flex-direction: column;
-    margin-left: -80%;    
+    margin-left: 60%;    
     align-items: center;
     text-align: center;
     padding: 5px;
@@ -346,7 +346,7 @@ section a:hover {
     margin-top: 10px;
     text-align: center;
     border-radius: 10px;
-    background-color: #0e0303; /* Light grey background */
+    background-color:transparent; /* Light grey background */
   }
 
   .mobile-menu {
