@@ -2,20 +2,39 @@
 body {
   margin: 0;
   position: relative;
-  min-height: 100vh;
+  min-height: 100dvh;
+  padding: 0;
+  box-sizing: border-box;
 }
+  html, body {
+      width: 100%;
+      max-width: 100%;
+      min-height: 100%;
+      overflow-x: hidden; /* Prevent horizontal swipe */
+      overflow-y: auto;
+  }
 
+  * {
+    box-sizing: border-box;
+  }
 .bg-container {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  min-height: 100dvh;
   background: #000;
   overflow: hidden;
   z-index: -1;
 }
-
+  /* Prevent elements from pushing outside screen */
+  img,
+  video,
+  canvas,
+  svg {
+    max-width: 100%;
+    height: auto;
+  }
 .star {
   position: absolute;
   width: 2px;
@@ -60,8 +79,16 @@ body {
 
 /* Small devices (phones, less than 600px) */
 @media (max-width: 600px) {
+
+   html,
+  body {
+    overflow-x: hidden;
+    touch-action: pan-y;
+  }
   .bg-container {
-    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    min-height: 100dvh;
   }
 
   .star {
@@ -77,8 +104,9 @@ body {
 
 /* Medium devices (tablets, 600px to 900px) */
 @media (min-width: 601px) and (max-width: 900px) {
-  .bg-container {
-    height: 100vh;
+   .bg-container {
+    width: 100%;
+    min-height: 100dvh;
   }
 
   .star {
@@ -94,9 +122,11 @@ body {
 
 /* Large devices (desktops, 901px and up) */
 @media (min-width: 901px) {
-  .bg-container {
-    height: 100vh;
+   .bg-container {
+    width: 100%;
+    min-height: 100vh;
   }
+
 
   .star {
     width: 2px;
